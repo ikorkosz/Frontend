@@ -22,7 +22,7 @@ pipeline {
         }
         stage('Clone Frontend repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/ikorkosz/Frontend.git'
+                checkout scm
             }
         }
 
